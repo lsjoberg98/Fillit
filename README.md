@@ -8,13 +8,13 @@
 Fillit recieves a map text file like this one with pieces.
 
 <p float="left">
-  <img src="/screens/Screen1.png" width="500" />
+  <img src="/resources/screen1.png" width="500" />
 </p>
 
 It finds the smallest possible square the pieces can be arranged in and prints out the square like this:
 
 <p float="left">
-  <img src="/screens/Screen3.png" width="500"/>
+  <img src="/resources/screen3.png" width="500"/>
 </p>
 
 
@@ -32,25 +32,25 @@ First the file is read by the parser and all the pieces are checked to make sure
 * Checks each '#' character to see if it's adjacent to another - A valid piece with 4 '#' characters will either have 6 or 8 adjacencies.
 
 <p float="left">
-  <img src="/screens/Screen2.png" width="500" />
+  <img src="resources/screen2.png" width="500" />
 </p>
 
 <p float="left">
-  <img src="/screens/Screen5.png" width="500" />
+  <img src="resources/screen5.png" width="500" />
 </p>
 
 
 The solver works using recursive backtracking. If the piece doesn't overlap any other pieces it places it on the map and then tries to call solve_map on all of the other pieces. If they all fit with the current piece in place then it succeeds. If not it moves the current piece and tries to solve the rest of the pieces with the current piece in it's new place. If it's moved all the pieces and still can't make them fit on the current map then it exits the solver, makes a larger map, and then tries to solve again.
 
 <p float="left">
-  <img src="/screens/Screen8.png" width="500" />
-  <img src="/screens/Screen7.png" width="500" />
+  <img src="resources/screen8.png" width="500" />
+  <img src="resources/screen7.png" width="500" />
 </p>
 
 
 <p float="left">
-  <img src="/screens/Screen4.png" width="500" />
-  <img src="/screens/Screen6.png" width="500" />
+  <img src="resources/screen4.png" width="500" />
+  <img src="resources/screen6.png" width="500" />
 </p>
 
 
@@ -74,4 +74,4 @@ Ours scores 0.00s in both cases so we got max score on this part.
 
 # Team
 
-![Olli](https://github.com/osamooja)
+[Olli](https://github.com/osamooja)
