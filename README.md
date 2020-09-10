@@ -7,6 +7,7 @@
 # What Fillit Does:
 Fillit recieves a map text file like this one with pieces.
 
+
 <p float="left">
   <img src="/resources/screen2.png" width="500" />
 </p>
@@ -30,7 +31,7 @@ First the file is read by the parser and all the pieces are checked to make sure
 * Counts number of '#' characters (Must be 4)
 * Checks for '\n' at end of piece block
 * Checks each '#' character to see if it's adjacent to another - A valid piece with 4 '#' characters will either have 6 or 8 adjacencies.
-
+<br><br>
 <p float="left">
   <img src="resources/screen1.png" width="500" height="421"/>
   <img src="resources/screen5.png" width="500" height="421"/>
@@ -38,17 +39,14 @@ First the file is read by the parser and all the pieces are checked to make sure
 
 <br>
 The solver works using recursive backtracking. If the piece doesn't overlap any other pieces it places it on the map and then tries to call solve_map on all of the other pieces. If they all fit with the current piece in place then it succeeds. If not it moves the current piece and tries to solve the rest of the pieces with the current piece in it's new place. If it's moved all the pieces and still can't make them fit on the current map then it exits the solver, makes a larger map, and then tries to solve again.
-
+<br>
 <p float="left">
   <img src="resources/screen4.png" width="500" height="683"/>
   <img src="resources/screen7.png" width="500" height="683"/>
 </p>
 
 <br>
-<p float="left">
-  <img src="resources/screen8.png" width="500" height="444"/>
-  <img src="resources/screen6.png" width="500" height="444"/>
-</p>
+
 
 
 # Speed Requirements
