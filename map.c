@@ -44,17 +44,6 @@ t_map	*new_map(int map_size)
 		ft_memset(map->array[i], '.', map_size);
 		i++;
 	}
-	/*
-	int	x;
-
-	x = 0;
-	while (x < map_size)
-	{
-		ft_putstr(map->array[x]);
-		ft_putchar('\n');
-		x++;
-	}
-	*/
 	return (map);
 }
 
