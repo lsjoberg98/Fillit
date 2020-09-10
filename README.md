@@ -9,7 +9,6 @@ Fillit recieves a map text file like this one with pieces.
 
 <p float="left">
   <img src="/resources/screen2.png" width="500" />
-  <img src="/resources/screen5.png" width="500" />
 </p>
 <br>
 It finds the smallest possible square the pieces can be arranged in and prints out the square like this:
@@ -41,13 +40,13 @@ First the file is read by the parser and all the pieces are checked to make sure
 The solver works using recursive backtracking. If the piece doesn't overlap any other pieces it places it on the map and then tries to call solve_map on all of the other pieces. If they all fit with the current piece in place then it succeeds. If not it moves the current piece and tries to solve the rest of the pieces with the current piece in it's new place. If it's moved all the pieces and still can't make them fit on the current map then it exits the solver, makes a larger map, and then tries to solve again.
 
 <p float="left">
-  <img src="resources/screen8.png" width="500" />
+  <img src="resources/screen4.png" width="500" />
   <img src="resources/screen7.png" width="500" />
 </p>
 
 <br>
 <p float="left">
-  <img src="resources/screen4.png" width="500" />
+  <img src="resources/screen8.png" width="500" />
   <img src="resources/screen6.png" width="500" />
 </p>
 
