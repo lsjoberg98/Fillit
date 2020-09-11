@@ -1,4 +1,8 @@
-# Hive-Fillit
+# Hive Fillit
+
+# Team Project 
+
+[Osamooja](https://github.com/osamooja)
 
 **Algorithms Practice - Fit tetris pieces into the smallest square possible.**
 
